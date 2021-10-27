@@ -5,7 +5,7 @@ on:
       - cron: '* * * * *'
 
 jobs:
-  numpy-test:
+  numpy-test-minute:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -21,4 +21,3 @@ jobs:
       - name: Run Python
         run: python python-sample.py
 
-        
