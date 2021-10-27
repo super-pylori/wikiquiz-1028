@@ -1,9 +1,11 @@
 name: Action Sample
 
 on:
-  schedule:
-    - cron: '* * * * *'
-
+  push:
+    branches: 
+      - master
+  workflow_dispatch:
+    
 jobs:
   numpy-test-minute:
     runs-on: ubuntu-latest
