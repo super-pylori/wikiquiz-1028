@@ -88,7 +88,7 @@ data_json = {"data":data}
 #pprint.pprint(json)
 
 #s = json.dumps(data_json, indent=4, ensure_ascii=False)
-with open('./data.json', 'w') as f:
+with open('./src/data.json', 'w') as f:
     json.dump(data_json, f, indent=4, ensure_ascii=False)
 
 '''
