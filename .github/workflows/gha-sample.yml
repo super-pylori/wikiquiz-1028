@@ -1,4 +1,4 @@
-name: Action Sample2
+name: getJson
 
 on:
   schedule:
@@ -27,10 +27,3 @@ jobs:
           git add .
           git commit -m "Add changes" -a
           git push origin master
-      - name: Push to gh-pages branch
-        env:
-          PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}    # personal access token を使う
-          PUBLISH_BRANCH: gh-pages
-        run: |
-          git push https://super-pylori:${PERSONAL_TOKEN}@github.com/super-pylori/wikiquiz-1028
-
