@@ -32,4 +32,5 @@ jobs:
           PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}    # personal access token を使う
           PUBLISH_BRANCH: gh-pages
         run: |
-          git push https://super-pylori:${PERSONAL_TOKEN}@github.com/super-pylori//wikiquiz-1028
+          git push https://super-pylori:${PERSONAL_TOKEN}@github.com/super-pylori/wikiquiz-1028
+
