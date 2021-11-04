@@ -16,12 +16,10 @@ jobs:
           architecture: 'x64'
       - name: Get Python version
         run: python -V
-      - name: Change Directory
-        run: cd python
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r python/requirements.txt
       - name: Run Python
-        run: python getWiki.py
+        run: python python/getWiki.py
       - name: Commit files
         run: |
           git config --local user.email "super.pylori6@gmail.com"
