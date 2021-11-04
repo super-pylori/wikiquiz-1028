@@ -1,8 +1,8 @@
-name: getJson
+name: Update Json
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '0/15 * * * *'
 
 jobs:
   getWiki:
