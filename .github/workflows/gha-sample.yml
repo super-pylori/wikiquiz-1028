@@ -1,8 +1,11 @@
 name: Update Json
 
 on:
-  schedule:
-    - cron: '0/15 * * * *'
+  push:
+    branches:
+      - master
+#  schedule:
+#    - cron: '0/15 * * * *'
 
 jobs:
   getWiki:
